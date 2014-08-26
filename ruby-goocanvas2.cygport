@@ -1,0 +1,19 @@
+ORIG_PN="goocanvas"
+inherit rubygem
+
+NAME="ruby-goocanvas2"
+VERSION=2.2.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby GooCanvas 2.x bindings"
+DESCRIPTION="Ruby/GooCanvas is a Ruby binding of the GTK+3 GooCanvas."
+HOMEPAGE="http://ruby-gnome2.sourceforge.jp/"
+
+PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
+ruby_goocanvas2_CONTENTS="--exclude=sample ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_goocanvas2_devel_REQUIRES=${NAME}
+ruby_goocanvas2_devel_CONTENTS="usr/lib/pkgconfig/ruby-goocanvas.pc"
+ruby_goocanvas2_doc_CONTENTS="${RUBYGEM_DOCDIR#/} ${RUBYGEM_INSTDIR#/}/sample/"
+PKG_IGNORE="usr/lib/lib*.a"
+
+DEPS_PATH="${RUBYGEM_EXTDIR%/*}/cairo-1*:${RUBYGEM_EXTDIR%/*}/glib2-*:${RUBYGEM_EXTDIR%/*}/gtk3-*"
