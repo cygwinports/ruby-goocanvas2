@@ -9,6 +9,8 @@ SUMMARY="Ruby GooCanvas 2.x bindings"
 DESCRIPTION="Ruby/GooCanvas is a Ruby binding of the GTK+3 GooCanvas."
 HOMEPAGE="http://ruby-gnome2.sourceforge.jp/"
 
+PATCH_URI="2.2.0-link-deps.patch"
+
 PKG_NAMES="${NAME} ${NAME}-devel ${NAME}-doc"
 ruby_goocanvas2_CONTENTS="--exclude=sample ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
 ruby_goocanvas2_devel_REQUIRES=${NAME}
