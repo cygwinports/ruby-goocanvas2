@@ -1,10 +1,12 @@
 --- origsrc/goocanvas-2.2.0/ext/goocanvas/extconf.rb	2015-05-20 22:27:27.070914800 -0500
 +++ src/goocanvas-2.2.0/ext/goocanvas/extconf.rb	2015-05-20 23:06:16.067659800 -0500
-@@ -35,7 +35,6 @@ end
+@@ -34,9 +34,6 @@ end
+   "glib2",
    "atk",
    "pango",
-   "gdk_pixbuf2",
+-  "gdk_pixbuf2",
 -  "gdk3",
-   "gtk3",
+-  "gtk3",
    "gobject-introspection",
  ].each do |package|
+   directory = "#{package}#{version_suffix}"

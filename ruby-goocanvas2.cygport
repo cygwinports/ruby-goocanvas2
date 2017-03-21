@@ -3,7 +3,7 @@ inherit rubygem
 
 NAME="ruby-goocanvas2"
 VERSION=2.2.0
-RELEASE=2
+RELEASE=3
 CATEGORY="Ruby"
 SUMMARY="Ruby GooCanvas 2.x bindings"
 DESCRIPTION="Ruby/GooCanvas is a Ruby binding of the GTK+3 GooCanvas."
